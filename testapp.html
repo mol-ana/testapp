@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Music App</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    
+    h1 {
+      text-align: center;
+    }
+    
+    .section {
+      margin-bottom: 20px;
+    }
+    
+    .song-list {
+      list-style-type: none;
+      padding: 0;
+    }
+    
+    .song-item {
+      display: flex;
+      align-items: center;
+      padding: 10px;
+      background-color: #f5f5f5;
+      border-radius: 5px;
+      margin-bottom: 5px;
+    }
+    
+    .song-item img {
+      width: 40px;
+      height: 40px;
+      margin-right: 10px;
+    }
+    
+    .playlist {
+      list-style-type: none;
+      padding: 0;
+    }
+    
+    .playlist-item {
+      display: flex;
+      align-items: center;
+      padding: 10px;
+      background-color: #f5f5f5;
+      border-radius: 5px;
+      margin-bottom: 5px;
+    }
+    
+    .playlist-item img {
+      width: 40px;
+      height: 40px;
+      margin-right: 10px;
+    }
+    
+    .add-song-form {
+      display: flex;
+      align-items: center;
+      margin-top: 10px;
+    }
+    
+    .add-song-form input[type="text"] {
+      flex: 1;
+      padding: 5px;
+      margin-right: 10px;
+    }
+    
+    .add-song-form button {
+      padding: 5px 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Music App</h1>
+
+  <div class="section">
+    <h2>All Songs</h2>
+    <ul class="song-list">
+      <li class="song-item">
+        <img src="song1.jpg" alt="Song 1">
+        <span>Song 1</span>
+      </li>
+      <li class="song-item">
+        <img src="song2.jpg" alt="Song 2">
+        <span>Song 2</span>
+      </li>
+      <li class="song-item">
+        <img src="song3.jpg" alt="Song 3">
+        <span>Song 3</span>
+      </li>
+      <!-- Add more song items -->
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Your Most Played Songs</h2>
+    <ul class="song-list">
+      <li class="song-item">
+        <img src="song1.jpg" alt="Song 1">
+        <span>Song 1</span>
+      </li>
+      <li class="song-item">
+        <img src="song2.jpg" alt="Song 2">
+        <span>Song 2</span>
+      </li>
+      <!-- Add more song items -->
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Your Playlist</h2>
+    <ul class="playlist">
+      <li class="playlist-item">
+        <img src="song1.jpg" alt="Song 1">
+        <span>Song 1</span>
+      </li>
+      <li class="playlist-item">
+        <img src="song2.jpg" alt="Song 2">
+        <span>Song 2</span>
+      </li>
+      <!-- Add more playlist items -->
+    </ul>
+    <form class="add-song-form">
+      <input type="text" placeholder="Enter song name">
+      <button type="submit">Add to Playlist</button>
+    </form>
+  </div>
+</body>
+</html>
